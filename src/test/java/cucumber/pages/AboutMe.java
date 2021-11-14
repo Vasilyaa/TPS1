@@ -12,7 +12,7 @@ public class AboutMe {
     }
 @Step("Загрузка картинки на сайт")
     public void putPicture(){
-        $(byXpath("//*[@id=\"info\"]/div/div[1]/div[1]/div[1]/form/div[1]/input")).uploadFile(new File("C:\\Users\\User\\Desktop\\3561528.jpg"));
+        $(byXpath("//*[@id=\"info\"]/div/div[1]/div[1]/div[1]/form/div[1]/input")).uploadFile(new File("/src/test/resources/3561528.jpg"));
         $(byXpath("//*[@id=\"info\"]/div/div[1]/div[1]/div[1]/form/div[2]/input")).click();
     }
  @Step("Проверка наличия картинки")
